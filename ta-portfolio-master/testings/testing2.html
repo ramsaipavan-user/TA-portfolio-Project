@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+        list-style-type: none;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 0.4fr 2.2fr 0.4fr;
+        grid-template-rows: 0.7fr 1.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: 0.4fr 2.2fr 0.4fr;
+        grid-template-rows: 0.1fr 4.5fr 0.1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". . ."
+          ". all-the-links ."
+          ". . .";
+        grid-area: 1 / 1 / 2 / 4;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 59px #04C3FF29;
+        opacity: 1;
+      }
+
+      .all-the-links {
+        grid-area: all-the-links;
+      }
+
+      .aboutus {
+        grid-area: 2 / 1 / 3 / 4;
+        border: 1px solid red;
+      }
+
+      .aboutus-content {
+        grid-area: 2 / 2 / 3 / 3;
+        border: 1px solid red;
+      }
+
+      .services {
+        grid-area: 3 / 1 / 4 / 4;
+        border: 1px solid red;
+      }
+
+      .services-content {
+        grid-area: 3 / 2 / 4 / 3;
+        border: 1px solid red;
+      }
+
+      .resume {
+        grid-area: 4 / 1 / 5 / 4;
+        border: 1px solid red;
+      }
+
+      .resume-contnet {
+        grid-area: 4 / 2 / 5 / 3;
+        border: 1px solid red;
+      }
+
+      .portfolio {
+        grid-area: 5 / 1 / 6 / 4;
+        border: 1px solid red;
+      }
+
+      .portfolio-content {
+        grid-area: 5 / 2 / 6 / 3;
+        border: 1px solid red;
+      }
+
+      .pricing {
+        grid-area: 6 / 1 / 7 / 4;
+        border: 1px solid red;
+      }
+
+      .pricing-content {
+        grid-area: 6 / 2 / 7 / 3;
+        border: 1px solid red;
+      }
+
+      .contact {
+        grid-area: 7 / 1 / 8 / 4;
+        border: 1px solid red;
+      }
+
+      .contact-content {
+        grid-area: 7 / 2 / 8 / 3;
+        border: 1px solid red;
+      }
+
+      .footer {
+        grid-area: 8 / 1 / 9 / 4;
+        border: 1px solid red;
+      }
+
+      .footer-content {
+        grid-area: 8 / 2 / 9 / 3;
+        border: 1px solid red;
+    }
+    .container-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-wrapper ul {
+        display: flex;
+    }
+    .header-logo {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+    .ham-icons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: auto;
+    }
+    .header-links-ul {
+        display: flex;
+        align-items: center;
+    }
+    .header-links-ul li {
+        margin-inline: 1rem;
+    }
+    .header-links-ul li a{
+        color: #333333;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <!-- <div class="all-the-links" >
+            <div class="container-wrapper">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="WA..svg" alt="WA logo" class="logo">
+                    </a>
+                </div>
+                <div class="ham-icons">
+                    <input type="checkbox" name="" id="check" style="display: none;">
+                    <label for="check" class="hamicon">
+                        <i class="fas fa-bars"></i> 
+                    </label>
+                    <ul class="header-links-ul">
+                        <li><a href="#" title="Home" style="color: #0ABEAD;" >Home</a></li>
+                        <li><a href="#aboutus" title="About us">About us</a></li>
+                        <li><a href="#services" title="Services">Services</a></li>
+                        <li><a href="#resume" title="Resume">Resume</a></li>
+                        <li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+                        <li><a href="#pricing" title="Pricing">Pricing</a></li>
+                        <li><a href="#contact" title="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div> -->
+      <div class="aboutus">
+      </div>
+      <div class="aboutus-content">
+            <div>
+                <img src="one.png" alt="">
+            </div>
+      </div>
+      <div class="services">
+      </div>
+      <div class="services-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias rerum non eos sapiente rem suscipit illo, laborum, ex voluptatem culpa sit repellat delectus totam doloremque id facilis consequatur eaque. Iure optio vitae, harum eum quaerat deserunt iste obcaecati architecto. Mollitia facilis veritatis dolore magni illo. Veritatis alias exercitationem laudantium.
+      </div>
+      <div class="resume">
+      </div>
+      <div class="resume-contnet">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias rerum non eos sapiente rem suscipit illo, laborum, ex voluptatem culpa sit repellat delectus totam doloremque id facilis consequatur eaque. Iure optio vitae, harum eum quaerat deserunt iste obcaecati architecto. Mollitia facilis veritatis dolore magni illo. Veritatis alias exercitationem laudantium.
+      </div>
+      <div class="portfolio">
+      </div>
+      <div class="portfolio-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias rerum non eos sapiente rem suscipit illo, laborum, ex voluptatem culpa sit repellat delectus totam doloremque id facilis consequatur eaque. Iure optio vitae, harum eum quaerat deserunt iste obcaecati architecto. Mollitia facilis veritatis dolore magni illo. Veritatis alias exercitationem laudantium.
+      </div>
+      <div class="pricing">
+      </div>
+      <div class="pricing-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias rerum non eos sapiente rem suscipit illo, laborum, ex voluptatem culpa sit repellat delectus totam doloremque id facilis consequatur eaque. Iure optio vitae, harum eum quaerat deserunt iste obcaecati architecto. Mollitia facilis veritatis dolore magni illo. Veritatis alias exercitationem laudantium.
+      </div>
+      <div class="contact">
+      </div>
+      <div class="contact-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias rerum non eos sapiente rem suscipit illo, laborum, ex voluptatem culpa sit repellat delectus totam doloremque id facilis consequatur eaque. Iure optio vitae, harum eum quaerat deserunt iste obcaecati architecto. Mollitia facilis veritatis dolore magni illo. Veritatis alias exercitationem laudantium.
+      </div>
+      <div class="footer">
+      </div>
+      <div class="footer-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum alias rerum non eos sapiente rem suscipit illo, laborum, ex voluptatem culpa sit repellat delectus totam doloremque id facilis consequatur eaque. Iure optio vitae, harum eum quaerat deserunt iste obcaecati architecto. Mollitia facilis veritatis dolore magni illo. Veritatis alias exercitationem laudantium.
+      </div>
+    </div>
+  </body>
+</html>
